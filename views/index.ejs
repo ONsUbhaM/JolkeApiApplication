@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolkes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="box">
+        <h1><%= setup  %></h1>
+        <h1><%= delivery %></h1>
+    </div>
+    <div class="button-section">
+        <form action="/" method="POST">
+            <select class="submit-btn" name="status" id="statusSelector">
+                <option value="en">english</option>
+                <option value="cs">Czech</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="pt">Portuguese</option>
+            </select>
+                <div class="blackList">black List->
+                <label><input type="checkbox" name="options" value="nsfw">nsfw</label>
+                <label><input type="checkbox" name="options" value="religious">religious</label>
+                <label><input type="checkbox" name="options" value="political">political</label>
+            </div>
+            <button type="submit" class="submit-btn">Refresh</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
